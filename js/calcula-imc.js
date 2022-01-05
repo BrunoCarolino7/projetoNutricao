@@ -29,8 +29,8 @@ for(let x = 0; x < paciente.length; x++){
     }
 
     if(pesoValido && alturaValida){
-        
-        imcTd.textContent = imc.toFixed(2);    
+        var imc = calculaImc(peso,altura);
+        imcTd.textContent = imc;    
     }
 }
 
